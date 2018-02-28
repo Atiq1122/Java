@@ -8,6 +8,7 @@ public static void main(String[] args) {
 	int num3;
 	int num4;
 	int num5;
+	int min,max;
 	System.out.println("enter 1st integer");
 	num1=input.nextInt();
 	System.out.println("enter 2nd integer");
@@ -18,27 +19,17 @@ public static void main(String[] args) {
 	num4=input.nextInt();
 	System.out.println("enter 5th integer");
 	num5=input.nextInt();
-	if(num1<num2&&num1<num3&&num1<num4&&num1<num5)
-		System.out.println(num1+" is smaller integer");
-	else if(num2<num1&&num2<num3&&num2<num4&&num2<num5)
-		System.out.println(num2+" is smaller integer");
-	else if(num3<num1&&num3<num2&&num3<num4&&num3<num5)
-		System.out.println(num3+" is smaller integer");
-	else if(num4<num1&&num4<num2&&num4<num3&&num4<num5)
-		System.out.println(num4+" is smaller integer");
-	else if(num5<num1&&num5<num2&&num5<num3&&num5<num4)
-		System.out.println(num5+" is smaller integer");
-	
-	if(num1>num2&&num1>num3&&num1>num4&&num1>num5)
-		System.out.println(num1+" is larger integer");
-	else if(num2>num1&&num2>num3&&num2>num4&&num2>num5)
-		System.out.println(num2+" is larger integer");
-	else if(num3>num1&&num3>num2&&num3>num4&&num3>num5)
-		System.out.println(num3+" is larger integer");
-	else if(num4>num1&&num4>num2&&num4>num3&&num4>num5)
-		System.out.println(num4+" is larger integer");
-	else if(num5>num1&&num5>num2&&num5>num3&&num5>num4)
-		System.out.println(num5+" is larger integer");
+	min=max=num1;
+	if(num2<min) min=num2;
+	if(num3<min) min=num3;
+	if(num4<min) min=num4;
+	if(num5<min) min=num5;
+	if(num2>max) max=num2;
+	if(num3>max) max=num3;
+	if(num4>max) max=num4;
+	if(num5>max) max=num5;
+	System.out.println(min+" is minimum number");
+	System.out.println(max+" is maximum number");
 	input.close();
 }
 }
