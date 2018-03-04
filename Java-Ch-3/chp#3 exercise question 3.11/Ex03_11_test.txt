@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+ 
+public class Ex03_11_Test {
+        public static void main (String [] args) {
+            
+            Ex03_11 mygradebook = new Ex03_11 ("Course Name", "Instructor's Name");
+ 
+     Scanner input = new Scanner (System.in);
+             
+            System.out.print ("Enter Your Course Name: ");
+            String name = input.nextLine();
+            mygradebook.setCourseName(name);
+            System.out.print ("Enter Your Course ");
+            String insName = input.nextLine();
+            mygradebook.setInstructorsName(insName);
+             
+            System.out.println ();
+             
+            mygradebook.displayMessage();
+ 
+    }
+}
