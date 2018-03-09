@@ -12,7 +12,7 @@ public static void main(String[] args) {
 	num3=input.nextInt();
 	sum=num1+num2+num3;
 	prod=num1*num2*num3;
-	avg=(prod)/3;
+	avg=(sum)/3;
 	System.out.println("Sum is:"+sum);
 	System.out.println("Product is:"+prod);
 	System.out.println("Average is:"+avg);
