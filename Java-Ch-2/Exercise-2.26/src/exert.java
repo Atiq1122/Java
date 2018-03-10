@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	System.out.println("enter 2nd num");
 	num2= input.nextInt();
 	if(num1%num2 == 0)
-		System.out.println(num1+" is multiple of" +num2+ "number");
+		System.out.println(num1+" is multiple of" +num2+ " number");
 	else
 		System.out.println("not multiple");
 	input.close();
