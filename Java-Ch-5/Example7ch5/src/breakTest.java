@@ -7,9 +7,9 @@ public class breakTest {
 		{
 		if ( count == 7 )
 			break;
-						System.out.printf( "%d ", count );
+						System.out.print( " " + count );
 		}
-				System.out.printf( "\nBroke out of loop at count = %d\n", count );
+				System.out.print( "\nBroke out of loop at count = " + count );
 	}
 
 }
