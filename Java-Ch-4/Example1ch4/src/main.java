@@ -13,7 +13,7 @@ public class main {
 		return courseName;
 	}
 	public void displayMessage() {
-		System.out.printf("Welcome to the grade book for \n%s!\n\n", getCourseName());
+		System.out.println("Welcome to the grade book for \n"+getCourseName());
 	}
 	public void determineClassAvg() {
 		Scanner input = new Scanner(System.in);
@@ -27,8 +27,7 @@ public class main {
 			gradeCounter = gradeCounter+1;
 		}
 	average = total / 10;
-	System.out.printf("\nTotal of all 10 grades is %d \n", total);
-	System.out.printf("Class average is %d\n", average);
+	System.out.println("\nTotal of all 10 grades is  \n"+ total);
+	System.out.println("Class average is \n"+ average);
 	}
-
 }
