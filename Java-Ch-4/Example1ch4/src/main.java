@@ -13,22 +13,24 @@ public class main {
 		return courseName;
 	}
 	public void displayMessage() {
-		System.out.printf("Welcome to the grade book for \n%s!\n\n", getCourseName());
+		System.out.println("Welcome to the grade book for "+ getCourseName());
 	}
 	public void determineClassAvg() {
 		Scanner input = new Scanner(System.in);
-		int total , gradeCounter , grade , average ;
+		int total , i , grade , average ;
 		total = 0;
-		gradeCounter = 1;
-		while (gradeCounter <= 10) {
-			System.out.print("Enter grade : ");
+		i = 1;
+		System.out.println("Grades mean Marks:");
+		while (i <= 10) {
+			System.out.print("Enter Grade : ");
 			grade = input.nextInt();
 			total = total+grade;
-			gradeCounter = gradeCounter+1;
+			i++;
 		}
+		input.close();
 	average = total / 10;
-	System.out.printf("\nTotal of all 10 grades is %d \n", total);
-	System.out.printf("Class average is %d\n", average);
+	System.out.println("Total of all 10 grades is :" + total);
+	System.out.println("Class average is "+ average);
 	}
 
 }

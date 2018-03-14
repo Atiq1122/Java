@@ -3,7 +3,7 @@ public class main {
 
 	public static void main(String[] args) {
 		int x = 34;
-		System.out.println(x);
+		//System.out.println(x);
 		
 		x = 234;
 		System.out.println(x * 4);

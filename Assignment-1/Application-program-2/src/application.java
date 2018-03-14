@@ -1,6 +1,6 @@
 public class application {
 private static String operatingsystem;
-private static String name;
+private  String name;
 private static int osversion;
 
 public application(String appname,String os, int osver){
