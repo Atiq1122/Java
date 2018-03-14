@@ -14,10 +14,10 @@ public class Analysis {
 				failures = failures + 1;
 			studentCounter = studentCounter + 1;
 		}
-			System.out.printf("Passed: %d\n Failed: %d\n" , passes,failures);
+			System.out.println("Passed: \n Failed: \n" +passes+failures);
 			if(passes > 8)
 				System.out.println("Bonus to instructor :");
-		}
 		
-
+		input.close();
+	}
 	}
