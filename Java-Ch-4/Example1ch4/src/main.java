@@ -13,7 +13,11 @@ public class main {
 		return courseName;
 	}
 	public void displayMessage() {
+<<<<<<< HEAD
 		System.out.println("Welcome to the grade book for "+ getCourseName());
+=======
+		System.out.println("Welcome to the grade book for \n"+getCourseName());
+>>>>>>> 7bde7b775d68618fe8055522c5e927ef2e528211
 	}
 	public void determineClassAvg() {
 		Scanner input = new Scanner(System.in);
@@ -29,8 +33,12 @@ public class main {
 		}
 		input.close();
 	average = total / 10;
+<<<<<<< HEAD
 	System.out.println("Total of all 10 grades is :" + total);
 	System.out.println("Class average is "+ average);
+=======
+	System.out.println("\nTotal of all 10 grades is  \n"+ total);
+	System.out.println("Class average is \n"+ average);
+>>>>>>> 7bde7b775d68618fe8055522c5e927ef2e528211
 	}
-
 }
