@@ -8,6 +8,6 @@ public class continueTest {
 			continue;
 						System.out.print( " " + count );
 		}
-				System.out.println( "\nUsed continue to skip printing 5" );
+				System.out.println( "Used continue to skip printing 5" );
 	}
 }
